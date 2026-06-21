@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend><h3>Personal Information</h3></legend>
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="enter fullname" required /><br /><br />
+
+        <label for="sid">Studen ID</label>
+        <input type="text" name="sid" id="sid" placeholder="enter student id" required /><br /><br />
+
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" placeholder="enter email" required /><br /><br />
+
+        <label for="phone">Phone Number </label>
+        <input type="phone" name="phone" id="phone" placeholder="enter phone number" required /><br /><br />
+
+        <label for="dob">Date of Birth </label>
+        <input type="date" name="dob" dob required /><br /><br />
+
+        <br /><br />
+        <label>Gender</label>
+        <input type="radio" id="male" name="Gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="Gender" value="other" />
+        <label for="other">Other</label><br />
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Academic Information</h3></legend>
+            <label for="department">Department: </label><br />
+           <select id="department" name="department">
+          <option value="CSE" selected>CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="BBA">BBA</option>
+          <option value="ENGLISH">ENGLISH</option>
+          <option value="CIVIL">CIVIL</option>
+        </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><h3>Semester</h3></legend>
+            <label for="semester">Semester: </label><br />
+           <select id="semester" name="semester">
+          <option>select your semester</option>
+          <option value="first">1st Semester</option>
+          <option value="second">2nd Semester</option>
+          <option value="third">3rd Semester</option>
+          <option value="four">4th Semester</option>
+          <option value="five">5th Semester</option>
+          <option value="six">6th Semester</option>
+          <option value="seven">7th Semester</option>
+          <option value="eight">8th Semester</option>
+        </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Skills</h3></Skills></legend>
+            <input type="checkbox" id="c" name="language" value="c" />
+           <label for="c">C</label><br />
+           <input type="checkbox" id="cpp" name="language" value="cpp" />
+           <label for="cpp">C++</label><br />
+            <input type="checkbox" id="java" name="language" value="java" />
+           <label for="java">Java</label><br />
+           <input type="checkbox" id="python" name="language" value="python" />
+           <label for="python">Python</label><br />
+           <input type="checkbox" id="javascript" name="language" value="javascript"/>
+           <label for="javascript">JavaScript</label><br />
+        </fieldset>
+
+
+        <fieldset>
+            <legend><h3>Additional Information</h3></legend>
+            <label for="address">Address</label><br>
+           <textarea id="address" name="address" rows="5" cols="33"></textarea><br><br>
+           
+           <label for="photo">Upload student photo</label><br />
+           <input type="file" id="photo" name="photo" />
+            <br><br>
+           <label for="comment">Comment</label><br>
+           <textarea id="comment" name="comment" maxlength="200"></textarea>
+
+        </fieldset>  
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </form>
+  </body>
+</html>
