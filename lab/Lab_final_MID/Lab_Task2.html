@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Club Membership Registration</title>
+    <link rel="stylesheet" href="Lab_Task2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>University Club Membership Registration</h2>
+        <form id="myForm">
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter First Name">
+            <small id="firstNameError" class="error"></small>
+            
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter Last Name">
+            <small id="lastNameError" class="error"></small>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter email address">
+            <small id="emailError" class="error"></small>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password">
+            <small id="passwordError" class="error"></small>
+
+            
+            <label>Gender</label>
+            <div class="radio-group">
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="others" name="gender" value="Others">
+                <label for="other">Others</label>
+
+            </div>
+            <small id="genderError" class="error"></small>
+
+            
+
+            <label>Interested Clubs</label>
+            <div class="checkbox-group">
+
+                <input type="checkbox" id="english" name="club" value="English club">
+                <label for="english">AIUB English Club</label>
+                <br>
+
+                <input type="checkbox" id="computer" name="club" value="AIUB Computer Club">
+                <label for="computer">AIUB Computer Club</label>
+                <br>
+
+                <input type="checkbox" id="photography" name="club" value="AIUB Photography Club">
+                <label for="photography">AIUB Photography Club</label>
+                <br>
+
+                <input type="checkbox" id="somoy" name="club" value="AIUB Social Welfare Club-SOMOY">
+                <label for="somoy">AIUB Social Welfare Club-SOMOY</label>
+                <br>
+
+                <input type="checkbox" id="oratory" name="club" value="AIUB Oratory Club">
+                <label for="oratory">AIUB Oratory Club</label>
+                <br>
+
+                <input type="checkbox" id="robotic" name="club" value="AIUB Robotic Crew">
+                <label for="robotic">AIUB Robotic Crew</label>
+                <br>
+
+                <input type="checkbox" id="business" name="club" value="AIUB Business Club">
+                <label for="business">AIUB Business Club</label>
+                <br>
+
+                <input type="checkbox" id="performing" name="club" value="AIUB Performing Arts Club">
+                <label for="performing">AIUB Performing Arts Club</label>
+                <br>
+
+                <input type="checkbox" id="research" name="club" value="AIUB Research for Development Club">
+                <label for="research">AIUB Research for Development Club</label>
+
+            </div>
+            <small id="clubError" class="error"></small>
+
+
+
+            
+            <label for="category">Club Category</label>
+            <select id="category">
+                <option value="">-- Select Club Category --</option>
+                <option value="Academic">Academic</option>
+                <option value="Technology">Technology</option>
+                <option value="Cultural & Arts">Cultural & Arts</option>
+                <option value="Social Service">Social Service</option>
+                <option value="Business">Business</option>
+            </select>
+            <small id="categoryError" class="error"></small>
+
+
+
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" rows="4"
+                placeholder="Write your reason here (min 20 characters)"></textarea>
+            <small id="reasonError" class="error"></small>
+
+            
+
+            <button type="submit">Register</button>
+
+
+        </form>
+    </div>
+    <script src="Lab_Task2.js"></script>
+</body>
+
+</html>
